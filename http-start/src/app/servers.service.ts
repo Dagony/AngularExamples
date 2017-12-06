@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Headers, Http } from '@angular/http';
 
 @Injectable()
 export class ServersService {
@@ -8,9 +8,19 @@ export class ServersService {
   }
 
   storeServers(servers: any[]) {
+    const headers = new Headers({'Content-Type': 'application/json'});
     return this.http.post(
       'https://udemy-ng-http-b5d36.firebaseio.com/data.json',
-      servers
+      servers,
+      {
+        "headers": headers
+      }
     );
+  }
+
+  getServers() {
+    return this.http.get(
+      'https://udemy-ng-http-b5d36.firebaseio.com/data.json'
+    )
   }
 }
