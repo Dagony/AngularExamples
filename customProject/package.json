@@ -1,0 +1,11 @@
+{
+  "name": "customproject",
+  "version": "1.0.0",
+  "description": "An Angular Seed Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark de Wit",
+  "license": "ISC"
+}
