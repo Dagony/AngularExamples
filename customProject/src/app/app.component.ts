@@ -1,10 +1,10 @@
-import {Component} from "@angular/core";
+import {Component} from '@angular/core';
 
 @Component({
-    declarations: [],
-    imports: [],
-    providers: [],
-    bootstrap: []
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
 }
